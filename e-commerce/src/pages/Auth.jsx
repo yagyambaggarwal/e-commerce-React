@@ -1,9 +1,11 @@
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Auth() {
 
+    const navigate = useNavigate();
     const [error, setError] = useState(null);
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const [mode, setMode] = useState("Sign Up");
@@ -33,6 +35,7 @@ export default function Auth() {
             } else {
                 alert(`Logged in with email: ${data.email}`);
             }
+            navigate("/");
         }
 
         reset();
@@ -63,7 +66,7 @@ export default function Auth() {
                         </div>
 
                         <button type="submit" className="btn btn-primary">{mode === "Sign Up" ? "Sign Up" : "Login"}</button>
-                        <button type="button" className="btn btn-primary" style={{ margin: "5px", backgroundColor: "crimson" }} onClick={logout}>Logout</button>
+                        {user && <button type="button" className="btn btn-primary" style={{ margin: "5px", backgroundColor: "crimson" }} onClick={logout}>Logout</button>}
 
                     </form>
 
