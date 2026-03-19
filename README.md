@@ -9,7 +9,7 @@ The goal of this project is to practice building scalable React applications wit
 
 # 🌐 Live Demo
 
-🔗 https://your-deployed-link.vercel.app
+🔗 https://baniyekidukaan.vercel.app/
 
 ---
 
@@ -93,80 +93,6 @@ Through this project I practiced:
 * GitHub
 * VS Code
 
----
-
-# 📂 Project Structure
-
-```
-src
- ┣ components
- ┃ ┣ Navbar.jsx
- ┃ ┣ ProductCard.jsx
- ┃ ┣ CartItem.jsx
- ┃ ┗ ProtectedRoute.jsx
- ┣ pages
- ┃ ┣ Home.jsx
- ┃ ┣ Login.jsx
- ┃ ┣ Signup.jsx
- ┃ ┣ ProductDetails.jsx
- ┃ ┗ Checkout.jsx
- ┣ context
- ┃ ┣ AuthContext.jsx
- ┃ ┗ CartContext.jsx
- ┣ hooks
- ┃ ┗ useAuth.js
- ┣ data
- ┃ ┗ products.js
- ┗ App.jsx
-```
-
----
-
-# ⚙️ Installation & Setup
-
-### 1️⃣ Clone the repository
-
-```
-git clone https://github.com/yourusername/react-ecommerce-store.git
-```
-
-### 2️⃣ Navigate into the project
-
-```
-cd react-ecommerce-store
-```
-
-### 3️⃣ Install dependencies
-
-```
-npm install
-```
-
-### 4️⃣ Start the development server
-
-```
-npm run dev
-```
-
-The app will run on:
-
-```
-http://localhost:5173
-```
-
----
-
-# 🚀 Deployment
-
-This project is deployed using **Vercel**.
-
-Steps to deploy:
-
-1. Push your project to GitHub
-2. Import the repository into Vercel
-3. Deploy the project
-
----
 
 # 🔮 Future Improvements
 
@@ -182,13 +108,13 @@ Steps to deploy:
 
 # 👨‍💻 Author
 
-Your Name
+Yagyam B Aggarwal
 
 GitHub
-https://github.com/yourusername
+https://github.com/yagyambaggarwal
 
 LinkedIn
-https://linkedin.com/in/yourprofile
+https://www.linkedin.com/in/yagyam-b-aggarwal-4636772b0/
 
 ---
 
