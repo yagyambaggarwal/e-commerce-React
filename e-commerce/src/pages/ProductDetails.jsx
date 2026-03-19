@@ -1,13 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom"
 import { getProductById } from "../data/products";
 import { useNavigate } from "react-router-dom";
+import { CartContext } from "../context/CartContext";
+
+
 
 export default function ProductDetails(){
 
     const { id } = useParams();
     const [product, setProduct] = useState(null);
     const navigate = useNavigate();
+    const {cartItems, addToCart} = useContext(CartContext);
 
     useEffect(
         () =>{
@@ -39,7 +43,7 @@ export default function ProductDetails(){
                         <h1>{product.name}</h1>
                         <p>{product.price}</p>
                         <p>{product.description}</p>
-                        <button className="btn btn-primary">Add to Cart</button>
+                        <button className="btn btn-primary" onClick={() => addToCart(product.id)}>Add to Cart</button>
                     </div>
                 </div>
             </div>

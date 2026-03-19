@@ -7,13 +7,14 @@ import NotFoundPage from './pages/NotFoundPage';
 import {Link, Route, Routes} from "react-router-dom";
 import ProductDetails from './pages/ProductDetails';
 import AuthProvider from './context/AuthContext';
+import CartProvider from './context/CartContext';
 
 function App() {
 
   return (  
 
     <AuthProvider>
-      
+      <CartProvider>
         <div className='app'>
           <Navbar />
 
@@ -26,6 +27,7 @@ function App() {
           </Routes>
         </div>
 
+      </CartProvider>  
       </AuthProvider>  
       )
 }
